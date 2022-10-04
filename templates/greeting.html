@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome! | Life Review{% endblock %}
+
+{% block content %}
+{{ super() }}
+{% if name %}
+    <h1>Hello {{ name|capitalize }}!</h1>
+{% else %}
+    <h1>Hello there!</h1>
+{% endif %}
+
+{% if greeting_msgs %}
+    <p>Welcome! {{ greeting_msgs['day'] }}</p>
+{% endif %}
+
+{% if temperatures %}
+    <p>Today's temperature is: {{ temperatures[0] }} °C</p>
+{% endif %}
+
+{% if name %}
+    {% if funny_msgs %}
+        <h6>Funny messages for you:</h6>
+        <ul>
+        {% for funny_msg in funny_msgs %}
+            <li>{{ funny_msg }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endif %}
+
+<style>
+  body {
+    color: black;
+    background-color: #f712a0;
+  }
+</style>
+{% endblock %}
