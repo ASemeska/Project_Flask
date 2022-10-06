@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjEwNzk0NDI&ixlib=rb-1.2.1&q=80&w=1080");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+.container {
+    margin: 0 auto;
+    background-color: transparent
+}
+
+.container-flex {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav button{
+    padding: 2em;
+    margin-left: 1em;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: 900;
+    border: none;
+    transform: scale(1);
+    transition: transform 200ms;
+}
+
+.home-btn{
+    background-image: url(./assest/house.svg);
+}
+
+nav button:hover,
+nav button:focus {
+    transform: scale(1.1);
+    color: white;
+ 
+}
