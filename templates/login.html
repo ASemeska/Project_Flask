@@ -2,9 +2,14 @@
 {% block title%}Login page{% endblock %}
 
 {% block content%}
-   <form action="#" method="post">
-        <p>Name:</p>
-        <p><input type="text" name="nm"></p>
-        <p><input type="submit" value="submit"></p>
-   </form>   
+<div class="main-container">
+   <div class="form-container">
+       <img src="../static/12b3b0c551934205b723d589c0c143b9.png" alt="" class="logo-img">
+       <form action="#" method="post">
+           <label for="input-submit" class="login-msg">Log in</label>
+           <p><input type="text" name="nm" class="input-submit" id="input-submit"></p>
+           <p class="input-btn-container"><input type="submit" value="submit" class="form-btn"></p>
+   </form> 
+   </div>
+</div>  
 {% endblock %}
